@@ -1,0 +1,31 @@
+[
+  {
+    "id": "agent1",
+    "assets": [
+      "btc",
+      "eth"
+    ],
+    "status": "running",
+    "autoSell": true,
+    "message": "Monitoring..."
+  },
+  {
+    "id": "agent2",
+    "assets": [
+      "ada",
+      "sol"
+    ],
+    "status": "running",
+    "autoSell": false,
+    "message": "Monitoring..."
+  },
+  {
+    "id": "agent3",
+    "assets": [
+      "doge"
+    ],
+    "status": "paused",
+    "autoSell": true,
+    "message": "Paused"
+  }
+]
