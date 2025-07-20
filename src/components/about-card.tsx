@@ -1,6 +1,7 @@
 "use client";
 
 import { Card, CardBody, CardHeader, Typography } from "@material-tailwind/react";
+import Image from "next/image"; // 👈 Import Next.js Image
 
 type AboutCardProps = {
   title: string;
@@ -13,8 +14,14 @@ export default function AboutCard({ title, subTitle, description, image }: About
   return (
     <Card className="w-full shadow-lg">
       {image && (
-        <CardHeader floated={false} className="h-56">
-          <img src={image} alt={title} className="h-full w-full object-cover" />
+        <CardHeader floated={false} className="relative h-56"> {/* 👈 Added relative positioning */}
+          <Image
+            src={image}
+            alt={title}
+            fill // 👈 Fills the parent container
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, 50vw" // 👈 Responsive sizing
+          />
         </CardHeader>
       )}
       <CardBody>

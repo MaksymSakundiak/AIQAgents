@@ -53,7 +53,7 @@ export function AboutEvent() {
         >
           Alpha Agents are intelligent, modular AI bots that operate independently
           in financial markets. They read data, interpret trends, make decisions,
-          and execute — all without human micromanagement. Whether you're a beginner
+          and execute — all without human micromanagement. Whether you&apos;re a beginner
           or an expert, our no-code logic builder, pre-trained models, and DeFi
           integration make launching your first AI agent easier than ever.
         </Typography>
